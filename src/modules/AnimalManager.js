@@ -7,9 +7,13 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/animals`).then(result => result.json())
   },
-  delete(id) {
+  softDelete(id) {
     return fetch(`${remoteURL}/animals/${id}`, {
-        method: "DELETE"
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({archived: true})
     })
     .then(result => result.json())
   }

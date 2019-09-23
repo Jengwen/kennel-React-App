@@ -3,12 +3,26 @@
     {
       "id": 1,
       "name": "Doodles",
-      "breed": "Poodle"
+      "breed": "Poodle",
+      "archived": false
     },
     {
       "id": 3,
       "name": "Esme",
-      "breed": "Pitbull"
+      "breed": "Pitbull",
+      "archived": false
+    },
+    {
+      "id": 4,
+      "name": "Taz",
+      "breed": "Labrador",
+      "archived": true
+    },
+    {
+      "id": 5,
+      "name": "Jack",
+      "breed": "Terrier",
+      "archived": false
     }
   ],
   "employees": [

@@ -10,7 +10,7 @@ class AnimalList extends Component {
     };
     // call method to delete animal and return refreshed list of animals
     deleteAnimal= id => {
-        AnimalManager.delete(id)
+        AnimalManager.softDelete(id)
             .then(AnimalManager.getAll)
             .then(animals => {
                 this.setState({
@@ -35,9 +35,15 @@ class AnimalList extends Component {
 
         return (
             <div className="container-cards">
-                {this.state.animals.map(singleAnimal => (
+                {this.state.animals.map(singleAnimal =>
+                 !singleAnimal.archived ? (
                     <AnimalCard deleteAnimal= {this.deleteAnimal}
-                    key={singleAnimal.id} animalProp={singleAnimal} />))}
+                    key={singleAnimal.id} animalProp={singleAnimal}
+                    />
+                    ) : (
+                        null
+                      )
+                    )}
             </div>
         )
     }
