@@ -9,6 +9,19 @@ class EmployeeList extends Component {
         employees: [],
     }
 
+    //call delete employee method
+    deleteEmployee = id => {
+        EmployeeManager.delete(id)
+        .then(() => {
+          EmployeeManager.getAll()
+          .then((employees) => {
+            this.setState({
+                employees: employees
+            })
+          })
+        })
+      }
+
 componentDidMount(){
     console.log("EMPLOYEE LIST: ComponentDidMount");
     //getAll from AnimalManager and hang on to that data; put it in state
@@ -25,7 +38,8 @@ render(){
 
     return(
         <div className="container-cards">
-            {this.state.employees.map(singleEmployee => <EmployeeCard key= {singleEmployee.id} employeeProp={singleEmployee} />)}
+            {this.state.employees.map(singleEmployee => <EmployeeCard
+            deleteEmployee = {this.deleteEmployee} key= {singleEmployee.id} employeeProp={singleEmployee} />)}
         </div>
     )
 }

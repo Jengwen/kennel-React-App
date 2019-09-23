@@ -6,6 +6,7 @@ class EmployeeCard extends Component {
           <div className="card-content">
             <h3>Name: {this.props.employeeProp.name}</h3>
             <p>Job Title: {this.props.employeeProp.jobTitle}</p>
+            <button onClick= {() => this.props.deleteEmployee(this.props.employeeProp.id)}>Fire Employee</button>
           </div>
         </div>
       );

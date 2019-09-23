@@ -1,55 +1,55 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle"
-        },
-        {
-            "id": 2,
-            "name": "Decker",
-            "breed": "German Sheperd"
-        },
-        {
-            "id": 3,
-            "name": "Esme",
-            "breed": "Pitbull"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Jim Bob",
-            "jobTitle": "Kennel Manager"
-        },
-        {
-            "id": 2,
-            "name": "Christy Brinkley",
-            "jobTitle": "assistant"
-        }
-    ],
-    "owners": [
-        {
-            "id": 1,
-            "name": "Susie Lawless",
-            "phoneNumber":"304-555-1212"
-        },
-        {
-            "id": 2,
-            "name": "Bob Hunts",
-            "phoneNumber": "304-555-1313"
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville South",
-            "address": "500 Puppy Way"
-        },
-        {
-            "id": 2,
-            "name": "Nashville North",
-            "address": "200 Kitten Road"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jim Bob",
+      "jobTitle": "Kennel Manager"
+    },
+    {
+      "id": 3,
+      "name": "Bob Barker",
+      "jobTitle": "poop scooper"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Susie Lawless",
+      "phoneNumber": "304-555-1212"
+    },
+    {
+      "id": 3,
+      "name": "Jane KittenLover",
+      "phoneNumber": "304-555-1414"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville South",
+      "address": "500 Puppy Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville North",
+      "address": "200 Kitten Pkwy"
+    },
+    {
+      "id": 3,
+      "name": "Nashville West",
+      "address": "350 Gerbil Road"
+    }
+  ]
 }
