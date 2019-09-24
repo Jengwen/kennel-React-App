@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 
 class AnimalCard extends Component {
   render() {
@@ -10,8 +11,8 @@ class AnimalCard extends Component {
           </picture>
           <h3>Name: <span className="card-petname">{this.props.animalProp.name}</span></h3>
           <p>Breed: {this.props.animalProp.breed}</p>
-          {/* button to delete animal when clciked */}
-          <button onClick= {() => this.props.deleteAnimal(this.props.animalProp.id)}>Check Out</button>
+          {/* button to see just detail on single animal */}
+          <Link to={`/animal/${this.props.animalProp.id}`}><button>Detail</button></Link>
         </div>
               </div>
     );
