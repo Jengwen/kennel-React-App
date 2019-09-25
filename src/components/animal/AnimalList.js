@@ -8,6 +8,7 @@ class AnimalList extends Component {
     state = {
         animals: [],
     };
+
     // call method to delete animal and return refreshed list of animals
     deleteAnimal= id => {
         AnimalManager.softDelete(id)
@@ -31,9 +32,15 @@ class AnimalList extends Component {
     }
 
     render() {
-        console.log("ANIMAL LIST: Render");
-
         return (
+            <>
+            <section className="section-content">
+  <button type="button"
+      className="btn"
+      onClick={() => {this.props.history.push("/animal/new")}}>
+      Admit Animal
+  </button>
+</section>
             <div className="container-cards">
                 {this.state.animals.map(singleAnimal =>
                  !singleAnimal.archived ? (
@@ -44,7 +51,7 @@ class AnimalList extends Component {
                         null
                       )
                     )}
-            </div>
+            </div></>
         )
     }
 }

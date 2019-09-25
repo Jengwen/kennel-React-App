@@ -36,9 +36,21 @@ class OwnerList extends Component {
         console.log("OWNER LIST: Render");
 
         return (
+            <>
+        <section className="section-content">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              this.props.history.push("/owner/new");
+            }}
+          >
+            New Owner
+          </button>
+        </section>
             <div className="container-cards">
                 {this.state.owners.map(singleOwner => <OwnerCard deleteOwner = {this.deleteOwner}key={singleOwner.id} ownerProp={singleOwner} />)}
-            </div>
+            </div></>
         )
     }
 }

@@ -22,7 +22,25 @@
       "id": 5,
       "name": "Jack",
       "breed": "Terrier",
-      "archived": false
+      "archived": true
+    },
+    {
+      "name": "Buddy",
+      "breed": "Border Collie",
+      "archived": false,
+      "id": 6
+    },
+    {
+      "name": "Tommy",
+      "breed": "Labradoodle",
+      "archived": false,
+      "id": 7
+    },
+    {
+      "name": "Justin",
+      "breed": "Boston Terrier",
+      "archived": false,
+      "id": 8
     }
   ],
   "employees": [
@@ -35,6 +53,16 @@
       "id": 3,
       "name": "Bob Barker",
       "jobTitle": "poop scooper"
+    },
+    {
+      "name": "Luke Miller",
+      "jobTitle": "caretaker",
+      "id": 4
+    },
+    {
+      "name": "Avery Smith",
+      "jobTitle": "caretaker",
+      "id": 5
     }
   ],
   "owners": [
@@ -47,6 +75,16 @@
       "id": 3,
       "name": "Jane KittenLover",
       "phoneNumber": "304-555-1414"
+    },
+    {
+      "name": "Amy Smith",
+      "phoneNumber": "304-555-1515",
+      "id": 4
+    },
+    {
+      "name": "Janet Jones",
+      "phoneNumber": "740-555-2525",
+      "id": 5
     }
   ],
   "locations": [
@@ -59,6 +97,11 @@
       "id": 3,
       "name": "Nashville West",
       "address": "350 Gerbil Road"
+    },
+    {
+      "name": "Nashville East",
+      "address": "250 Hamster Road",
+      "id": 4
     }
   ]
 }

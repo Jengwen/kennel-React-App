@@ -37,10 +37,22 @@ render(){
     console.log("EMPLOYEE LIST: Render");
 
     return(
+        <>
+        <section className="section-content">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              this.props.history.push("/employee/new");
+            }}
+          >
+            New Employee
+          </button>
+        </section>
         <div className="container-cards">
             {this.state.employees.map(singleEmployee => <EmployeeCard
             deleteEmployee = {this.deleteEmployee} key= {singleEmployee.id} employeeProp={singleEmployee} />)}
-        </div>
+        </div></>
     )
 }
 }
