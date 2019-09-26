@@ -36,3 +36,7 @@ small {
   nav .container a:hover {
     color: maroon;
   }
+
+  nav .nav-link a {
+    color: lime
+  }

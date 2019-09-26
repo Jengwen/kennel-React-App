@@ -21,16 +21,18 @@ class AnimalDetail extends Component {
         //get(id) from AnimalManager and hang on to that data; put it into state
         AnimalManager.getOne(this.props.animalId)
         .then((animal) => {
+          console.log("what happens here")
             this.setState({
                 name: animal.name,
                 breed: animal.breed,
-                loadingStatus: false
+                loadingStatus: false,
             });
         });
     }
 
+
     render() {
-      return (
+      return this.state.name === undefined ? (<p>This Animal Is No Longer Available</p>) :(
         <div className="card">
           <div className="card-content">
             <picture>
