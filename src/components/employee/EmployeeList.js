@@ -51,7 +51,7 @@ render(){
         </section>
         <div className="container-cards">
             {this.state.employees.map(singleEmployee => <EmployeeCard
-            deleteEmployee = {this.deleteEmployee} key= {singleEmployee.id} employeeProp={singleEmployee} />)}
+            deleteEmployee = {this.deleteEmployee} key= {singleEmployee.id} {...this.props} employeeProp={singleEmployee} />)}
         </div></>
     )
 }

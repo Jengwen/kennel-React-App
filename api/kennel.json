@@ -2,67 +2,87 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle",
+      "name": "Doodles!",
+      "breed": "Pug",
+      "employeeId": 1,
       "archived": false
     },
-    {
-      "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull",
-      "archived": false
-    },
+   
     {
       "id": 4,
       "name": "Taz",
       "breed": "Labrador",
-      "archived": true
+      "archived": true,
+      "employeeId": 4
     },
     {
       "id": 5,
       "name": "Jack",
       "breed": "Terrier",
-      "archived": true
+      "archived": true,
+      "employeeId": 3
     },
-    {
-      "name": "Buddy",
-      "breed": "Border Collie",
-      "archived": false,
-      "id": 6
-    },
+
     {
       "name": "Tommy",
       "breed": "Labradoodle",
       "archived": false,
-      "id": 7
+      "id": 7,
+      "employeeId": 4
     },
     {
       "name": "Justin",
       "breed": "Boston Terrier",
       "archived": false,
-      "id": 8
+      "id": 8,
+      "employeeId": 1
+    },
+    {
+      "name": "Fluffy",
+      "breed": "Cat",
+      "employeeId": 3,
+      "archived": true,
+      "id": 9
+    },
+    {
+      "name": "Fluffball",
+      "breed": "kitten",
+      "employeeId": 4,
+      "archived": false,
+      "id": 10
+    },
+    {
+      "name": "JoJo",
+      "breed": "hamster",
+      "employeeId": 5,
+      "archived": false,
+      "id": 11
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Jim Bob",
-      "jobTitle": "Kennel Manager"
+      "jobTitle": "Kennel Manager",
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "Bob Barker",
-      "jobTitle": "poop scooper"
+      "jobTitle": "poop scooper manager",
+      "locationId": 3
     },
     {
       "name": "Luke Miller",
       "jobTitle": "caretaker",
-      "id": 4
+      "id": 4,
+      "locationId": 4
     },
     {
       "name": "Avery Smith",
       "jobTitle": "caretaker",
-      "id": 5
+      "id": 5,
+      "locationId": 3
     }
   ],
   "owners": [
@@ -74,7 +94,7 @@
     {
       "id": 3,
       "name": "Jane KittenLover",
-      "phoneNumber": "304-555-1414"
+      "phoneNumber": "304-555-1415"
     },
     {
       "name": "Amy Smith",
@@ -91,7 +111,7 @@
     {
       "id": 1,
       "name": "Nashville South",
-      "address": "500 Puppy Way"
+      "address": "2450 Puppies Lane"
     },
     {
       "id": 3,

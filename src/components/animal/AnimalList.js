@@ -45,7 +45,7 @@ class AnimalList extends Component {
                 {this.state.animals.map(singleAnimal =>
                  !singleAnimal.archived ? (
                     <AnimalCard deleteAnimal= {this.deleteAnimal}
-                    key={singleAnimal.id} animalProp={singleAnimal}
+                    key={singleAnimal.id} animalProp={singleAnimal}{...this.props}
                     />
                     ) : (
                         null

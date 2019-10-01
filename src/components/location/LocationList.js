@@ -50,6 +50,7 @@ class LocationList extends Component {
             <LocationCard
               deleteLocation={this.deleteLocation}
               key={singleLocation.id}
+              {...this.props}
               locationProp={singleLocation}
             />
           ))}

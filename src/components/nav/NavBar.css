@@ -37,6 +37,6 @@ small {
     color: maroon;
   }
 
-  nav .nav-link a {
+  nav .nav-link.enabled a {
     color: lime
   }

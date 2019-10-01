@@ -1,4 +1,4 @@
-import { Route, withRouter, Redirect } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./home/Home";
 import EmployeeList from "./employee/EmployeeList";
@@ -12,6 +12,11 @@ import LocationForm from "./location/LocationForm";
 import OwnerForm from "./owner/OwnerForm";
 import EmployeeForm from "./employee/EmployeeForm";
 import Login from "./auth/Login";
+import AnimalEditForm  from "./animal/AnimalEditForm";
+import EmployeeEditForm from "./employee/EmployeeEditForm";
+import LocationEditForm from "./location/LocationEditForm";
+import OwnerEditForm from "./owner/OwnerEditForm";
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals";
 
 class ApplicationViews extends Component {
   // Check if credentials are in local storage
@@ -28,7 +33,7 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          path="/animal/:animalId(\d+)"
+          exact path="/animal/:animalId(\d+)"
           render={props => {
             // Pass the animalId to the AnimalDetailComponent
             return (
@@ -110,6 +115,29 @@ class ApplicationViews extends Component {
           }}
         />
         <Route path="/login" component={Login} />
+        <Route
+  path="/animal/:animalId(\d+)/edit" render={props => {
+    return <AnimalEditForm {...props} />
+  }}
+/>
+        <Route
+  exact path="/employee/:employeeId(\d+)/edit" render={props => {
+    return <EmployeeEditForm {...props} />
+  }}
+/>
+<Route
+  path="/location/:locationId(\d+)/edit" render={props => {
+    return <LocationEditForm {...props} />
+  }}
+/>
+<Route
+  path="/owner/:ownerId(\d+)/edit" render={props => {
+    return <OwnerEditForm {...props} />
+  }}
+/>
+<Route path="/employee/:employeeId(\d+)" render={(props) => {
+    return <EmployeeWithAnimals {...props} />
+}} />
       </React.Fragment>
     );
   }

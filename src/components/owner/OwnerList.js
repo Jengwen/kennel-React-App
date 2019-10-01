@@ -49,7 +49,7 @@ class OwnerList extends Component {
           </button>
         </section>
             <div className="container-cards">
-                {this.state.owners.map(singleOwner => <OwnerCard deleteOwner = {this.deleteOwner}key={singleOwner.id} ownerProp={singleOwner} />)}
+                {this.state.owners.map(singleOwner => <OwnerCard {...this.props} deleteOwner = {this.deleteOwner}key={singleOwner.id} ownerProp={singleOwner} />)}
             </div></>
         )
     }
